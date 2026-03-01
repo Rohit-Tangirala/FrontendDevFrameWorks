@@ -25,7 +25,7 @@ This repository contains multiple real-world examples — including simple UI pr
 | **README.md** | This file. |
 | **casestudyfedf.pdf** | Case study guide for course. |
 
-> *Note:* Projects are grouped by simple concepts and reflect progressive learning within frontend frameworks and general web dev fundamentals. :contentReference[oaicite:0]{index=0}
+> *Note:* Projects are grouped by simple concepts and reflect progressive learning within frontend frameworks and general web dev fundamentals. 
 
 ---
 
@@ -43,7 +43,7 @@ Languages breakdown (approximate):
 - HTML ~37%
 - CSS ~36%
 - Java ~21%
-- JavaScript ~6% :contentReference[oaicite:1]{index=1}
+- JavaScript ~6%
 
 ---
 
