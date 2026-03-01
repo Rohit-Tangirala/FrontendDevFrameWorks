@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Student Profile</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-decoration: underline;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 90%;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        th {
+            background: #f2f2f2;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid black;
+            margin: 2px;
+            display: inline-block;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: 2px solid black;
+            background: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background: lightgray;
+        }
+
+        .top-buttons {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Student Profile</h1>
+
+<div class="top-buttons">
+    <a th:href="@{/addUserForm}">
+        <button class="btn">Submit</button>
+    </a>
+
+    <a th:href="@{/}">
+        <button class="btn">Display</button>
+    </a>
+
+    <a th:href="@{/exit}">
+        <button class="btn">Exit</button>
+    </a>
+</div>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>DOB</th>
+        <th>Contact No</th>
+        <th>Email</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr th:each="user : ${users}">
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.rollno}"></td>
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.gender}"></td>
+        <td th:text="${user.dob}"></td>
+        <td th:text="${user.contactNo}"></td>
+        <td th:text="${user.email}"></td>
+        <td>
+            <a th:href="@{/updateUserForm/{id}(id=${user.id})}">Update</a>
+            <a th:href="@{/deleteUser/{id}(id=${user.id})}">Delete</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
