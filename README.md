@@ -1,6 +1,6 @@
 # FrontendDevFrameWorks
 
-**FrontendDevFrameWorks** is a collection of practical frontend development exercises, projects, and assignments completed as part of the FEDF (Frontend Development Frameworks) course.
+**FrontendDevFrameWorks** is a collection of practical frontend development exercises, projects, and assignments completed as part of the FEDF (Frontend Development Frameworks) and FSAD (Full Stack Apllication Development ) courses.
 
 This repository contains multiple real-world examples — including simple UI projects, form implementations, and small applications — built using HTML, CSS, JavaScript, and related frameworks.
 
